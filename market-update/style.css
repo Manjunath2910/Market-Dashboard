@@ -22,11 +22,9 @@ align-items:flex-start;
 
 .card{
 
-width:min(100vw,1080px);
-aspect-ratio:1/1;
-
-height:auto;
-
+ width:min(100vw,1080px);
+    aspect-ratio:1/1;
+    height:auto;
 
 margin:auto;
 
@@ -418,7 +416,7 @@ display :none;
 position:fixed;
 
 /* adjust these values */
-left:1400px;
+left:920px;
 top:95%;
 
 transform:translateY(-50%);
@@ -429,7 +427,7 @@ border:1px solid rgba(102,204,132,.3);
 color:#66cc84;
 
 font-family:'Plus Jakarta Sans',sans-serif;
-font-size:11px;
+font-size:22px;
 font-weight:600;
 
 padding:7px 14px;
@@ -464,124 +462,37 @@ transform:scale(.96);
     font-size: 20px;
 }
 
-@media(max-width:1100px){
 
-body{
-overflow:auto;
+
+@media (max-width: 768px) {
+
+    body{
+        overflow-x:hidden;
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+    }
+
+    .card{
+        width:1080px !important;
+        height:1080px !important;
+
+        transform:scale(0.32);
+        transform-origin:top center;
+
+        margin:0 auto;
+
+        /* Adjust this value if needed */
+        margin-bottom:-700px;
+    }
+
+    .download-btn{
+        position:fixed;
+        bottom:20px;
+        left:50%;
+        transform:translateX(-50%);
+    }
 }
-
-/* KEEP ORIGINAL SIZE */
-.card{
-
-width:1080px !important;
-height:1080px !important;
-
-min-width:1080px !important;
-min-height:1080px !important;
-
-max-width:1080px !important;
-max-height:1080px !important;
-
-transform:none !important;
-}
-
-}
-
-/* FIX MOBILE IMAGE EXPORT */
-
-.card{
-width:1080px !important;
-height:1080px !important;
-
-max-width:none !important;
-min-width:1080px !important;
-
-transform:scale(.32);
-transform-origin:top center;
-
-margin:auto;
-}
-
-/* MOBILE VIEW FIX */
-
-body{
-overflow-x:auto;
-}
-
-
-
-@media(max-width:768px){
-
-.card{
-    width:100vw;
-    max-width:100vw;
-    aspect-ratio:1/1;
-
-    padding:20px;
-}
-
-.market-title h1{
-    font-size:50px;
-}
-
-.headline{
-    font-size:32px;
-}
-
-.headline span{
-    font-size:32px;
-}
-
-.box{
-    width:42%;
-    padding:15px;
-}
-
-.box span{
-    font-size:28px;
-}
-
-.status{
-    font-size:18px;
-}
-
-.logo img{
-    width:160px;
-}
-
-.coin{
-    transform:scale(.7);
-}
-
-.download-btn{
-    left:50%;
-    transform:translateX(-50%);
-    top:auto;
-    bottom:20px;
-}
-}
-
-/* DOWNLOAD BUTTON */
-
-.download-btn{
-
-position:fixed;
-
-bottom:20px;
-left:95%;
-
-transform:translateX(-50%);
-
-z-index:9999;
-
-font-size:11px;
-padding:7px 14px;
-
-border-radius:15px;
-
-}
-
-    
 
 .strengthened{
 color:#00c853;

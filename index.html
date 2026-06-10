@@ -3,42 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Market Dashboard</title>
 
 <style>
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     background:#111827;
+    padding:20px;
 }
 
 h1{
-    color:white;
+    color:#fff;
     text-align:center;
-    padding:10px;
-    font-family:Arial, sans-serif;
-    font-size:40px;
+    margin-bottom:60px;
+    font-size:60px;
+}
+
+.container{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.project{
+    width:430px;
+    height:430px;
+    overflow:hidden;
+    
+    
 }
 
 iframe{
-    width:100%;
-    height:1000px;
+    width:1080px;
+    height:1080px;
     border:none;
-    display:block;
-    margin-bottom:20px;
+
+    /* Scale 1080x1080 card to fit 360x360 box */
+    transform:scale(0.3339);
+    transform-origin:top left;
+}
+.download-btn{
+
+    position:absolute;
+
+    bottom:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#0f3024;
+    border:1px solid rgba(102,204,132,.3);
+
+    color:#66cc84;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    z-index:9999;
 }
 </style>
 </head>
-
 <body>
 
 <h1>Market Dashboard</h1>
 
-<iframe src="./market-update/index.html"></iframe>
+<div class="container">
 
-<iframe src="./pandamoney/index.html"></iframe>
+    <div class="project">
+        <iframe src="market-update/index.html"></iframe>
+    </div>
 
-<iframe src="./market-price/index.html"></iframe>
+    <div class="project">
+        <iframe src="pandamoney/index.html"></iframe>
+    </div>
+
+    <div class="project">
+        <iframe src="market-price/index.html"></iframe>
+    </div>
+
+</div>
 
 </body>
 </html>

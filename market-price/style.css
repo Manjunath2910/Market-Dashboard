@@ -460,22 +460,18 @@ body{
 }
 .download-box{
     position:fixed;
-
-    left:1050px;
-    bottom:-410px;   /* show below chart */
-
+    left:800px;
+    bottom:-400px;
     z-index:9999;
-
-    
 }
 .download-btn{
     padding:7px 14px;
     border:none;
-    border-radius:10px;
+    border-radius:14px;
     background:#0f3024;
     border:1px solid rgba(102,204,132,.3);
     color:#66cc84;
-    font-size:11px;
+    font-size:22px;
     font-weight:600;
     cursor:pointer;
 

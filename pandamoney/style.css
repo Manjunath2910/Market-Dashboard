@@ -366,14 +366,14 @@ body{
 .download-btn{
   position:absolute;
   bottom:30px;
-  left:1400px;
+  left:920px;
 
   background:#0f3024;
   border:1px solid rgba(102,204,132,.3);
 
   color:#66cc84;
   font-family:'Plus Jakarta Sans',sans-serif;
-  font-size:11px;
+  font-size:20px;
   font-weight:600;
 
   padding:7px 14px;

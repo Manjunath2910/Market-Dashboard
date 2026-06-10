@@ -1,24 +1,48 @@
 .container{
     display:flex;
-    flex-direction:column;
+    justify-content:center;
     gap:20px;
-    align-items:center;
+    flex-wrap:wrap;
 }
 
-.card{
-    width:100%;
-    max-width:430px;
-    margin:0 auto;
-    overflow:hidden;
+.project{
+    width:500px;
+    height:650px;   /* Bigger container */
+
+    overflow:visible; /* Show download button */
+
+    position:relative;
+
+    border-radius:15px;
 }
 
 iframe{
     width:1080px;
-    height:1080px;
+    height:1300px; /* Include download button area */
+
     border:none;
 
-    transform:scale(0.35);
+    transform:scale(0.46);
     transform-origin:top left;
+}
 
-    margin-bottom:-700px;
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .project{
+        width:95vw;
+        height:700px;
+    }
+
+    iframe{
+        width:1080px;
+        height:1300px;
+
+        transform:scale(calc(95vw / 1080));
+        transform-origin:top left;
+    }
 }
