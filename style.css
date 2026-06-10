@@ -512,55 +512,38 @@ body{
 overflow-x:auto;
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
 
-html,
-body{
-margin:0;
-padding:0;
-background:#000;
-overflow-x:auto;
-overflow-y:auto;
+    body{
+        overflow-x:hidden;
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+    }
+
+    .card{
+        width:1080px !important;
+        height:1080px !important;
+
+        transform:scale(0.32);
+        transform-origin:top center;
+
+        margin:0 auto;
+
+        /* Adjust this value if needed */
+        margin-bottom:-700px;
+    }
+
+    .download-btn{
+        position:fixed;
+        bottom:20px;
+        left:50%;
+        transform:translateX(-50%);
+    }
 }
 
-/* FULL CARD */
 
-.card{
 
-width:1080px !important;
-height:1080px !important;
-
-zoom:0.55;
-
-transform:none !important;
-
-margin:20px auto 120px auto;
-
-position:relative;
-
-}
-
-/* DOWNLOAD BUTTON */
-
-.download-btn{
-
-position:fixed;
-
-bottom:20px;
-left:50%;
-
-transform:translateX(-50%);
-
-z-index:9999;
-
-font-size:16px;
-padding:14px 24px;
-
-border-radius:12px;
-
-}
-
-}
 
 .strengthened{
 color:#00c853;
