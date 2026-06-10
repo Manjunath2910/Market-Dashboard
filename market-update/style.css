@@ -302,31 +302,32 @@ box-shadow:0 0 30px rgb(113, 110, 95);
 }
 
 .status{
-margin:45px auto 0 auto;
+    margin:45px auto 0;
 
-padding:18px 32px;
+    padding:18px 32px;
 
-font-size:28px;
-font-weight:bold;
+    font-size:28px;
+    font-weight:bold;
 
-border-radius:18px;
+    border-radius:18px;
 
-background:#ffffff;
-color:#000;
+    background:#fff;
+    color:#000;
 
-border:2px solid #e5e5e5;
+    border:2px solid #e5e5e5;
 
-display:flex;
-align-items:center;
-justify-content:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-gap:16px;
+    gap:16px;
 
-width:fit-content;
+    width:fit-content;
 
-position:relative;
-left:25.5%;
-transform:translateX(-50%);
+    position:relative;
+
+    left:0;
+    transform:none;
 }
 
 .footer{
